@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/javascript.js"></script>
+    <script src="js/validacao.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>IMC</title>
+</head>
+<body>
+    <div class="container">
+        <h1>IMC</h1>
+        <h3>Calculadora de índice de massa corporal</h3>
+            <label for="">Peso <small>(ex: 51,7)</small></label>
+
+            <input id="peso" type="number" required="" placeholder="Digite seu peso em quilos" min="1" step="any"> 
+            
+            <label for="">Altura <small>(ex: 1,65)</small></label>
+
+            <input id="altura" type="number"  required="" placeholder="Digite sua altura em Metros" min="1" step="any">
+            
+            <input onclick='calcular()' type="submit" value="Calcular" >
+
+            <h2>Resultado: <span id="resultado"></span></h2> 
+        <br>
+        <br>
+        <div class="tabela">
+            <table>
+                <tr>
+                    <th>IMC</th>
+                    <th>CLASSIFIÇÃO</th>
+                    <th>OBESIDADE <SPAN>(GRAU)</SPAN></th>
+                </tr>
+                <tr id="bPeso" class="linhas">
+                    <td>Menor que 18,5</td>
+                    <td>Abaixo do peso</td>
+                    <td>0</td>
+                </tr>
+                <tr id="pIdeal" class="linhas">
+                    <td>Entre 18,5 e 25,0</td>
+                    <td>Peso ideal</td>
+                    <td>0</td>
+                </tr>
+                <tr id="sobrepeso" class="linhas">
+                    <td>Entre 25,0 e 30,0</td>
+                    <td>Sobrepeso</td>
+                    <td>0</td>
+                </tr>
+                <tr id="obesidade" class="linhas">
+                    <td>Entre 30,0 e 35,0</td>
+                    <td>Obesidade </td>
+                    <td>I</td>
+                </tr>
+                <tr id="obesidade2" class="linhas">
+                    <td>Entre 35,0 e 40,0</td>
+                    <td>Obesidade</td>
+                    <td>II</td>
+                </tr>
+                <tr id="grave" class="linhas">
+                    <td>Maior que 40,0</td>
+                    <td>Obesidade Grave</td>
+                    <td>III</td>
+                </tr>
+            </table>
+        </div>
+
+            <button class="botao" onclick="limpar()" > <strong> Limpar conteudo </strong></Limpar></button>
+
+
+        <footer> <h3>Marcus Vieites &copy;</h3><footer>
+    
+    </div>
+</body>
+</html>
